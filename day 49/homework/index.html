@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .black-div {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 15px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        .centered-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="black-div"><p>hi :D</p></div>
+
+    <!-- 
+        Border-radius-ს აქვს ოთხი sub-property:
+        1. border-top-left-radius - განსაზღვრავს ზედა მარცხენა კუთხის მომრგვალებას.
+        2. border-top-right-radius - განსაზღვრავს ზედა მარჯვენა კუთხის მომრგვალებას.
+        3. border-bottom-left-radius - განსაზღვრავს ქვედა მარცხენა კუთხის მომრგვალებას.
+        4. border-bottom-right-radius - განსაზღვრავს ქვედა მარჯვენა კუთხის მომრგვალებას.
+    -->
+
+    
+    <form class="contact-form">
+        <input type="text" placeholder="სახელი" required>
+        <input type="email" placeholder="ელ. ფოსტა" required>
+        <textarea placeholder="შეტყობინება" rows="4" required></textarea>
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+    
+    <img src="data:image/jpeg;base64,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" alt="Centered Image" class="centered-image">
+
+</body>
+</html>
