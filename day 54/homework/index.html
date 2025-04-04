@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .box1 {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            animation: box1Anim 5s ease-in-out 3s forwards;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            top: 250px;
+            left: 50px;
+            animation: box2Anim 7s infinite alternate;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: box3Anim 3s ease-in-out forwards;
+        }
+
+        .box1, .box2, .box3 {
+            will-change: transform, background-color, border-radius;
+        }
+
+        @keyframes box1Anim {
+            to {
+                transform: rotate(360deg) scale(2);
+                background-color: red;
+            }
+        }
+
+        @keyframes box2Anim {
+            to {
+                border-radius: 50%;
+                transform: translateX(100px);
+                background-color: purple;
+            }
+        }
+
+        @keyframes box3Anim {
+            to {
+                bottom: 80%;
+                width: 150px;
+                height: 150px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
