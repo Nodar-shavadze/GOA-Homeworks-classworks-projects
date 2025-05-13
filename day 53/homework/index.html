@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .parent-flex-wrap {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .child-blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 5px;
+        }
+
+        
+        .parent-flex-grow {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .child-red {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        
+        .parent-position {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .child-red-abs {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .child-blue-abs {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="parent-flex-wrap">
+        <div class="child-blue"></div>
+        <div class="child-blue"></div>
+        <div class="child-blue"></div>
+        <div class="child-blue"></div>
+        <div class="child-blue"></div>
+        <div class="child-blue"></div>
+        <div class="child-blue"></div>
+        <div class="child-blue"></div>
+    </div>
+
+    
+    <div class="parent-flex-grow">
+        <div class="child-red"></div>
+    </div>
+
+    
+    <div class="parent-position">
+        <div class="child-red-abs"></d

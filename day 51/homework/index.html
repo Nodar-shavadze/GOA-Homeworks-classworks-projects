@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+    <style>
+      
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            height: 500px;
+        }
+
+        .box {
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 5px solid #4CAF50;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1em;
+            color: #666;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding the Box Model</h1>
+    </header>
+    <section class="container">
+        <div class="box">
+            <h1>box models</h1>
+            <p>content-is a box where the text is in</p>
+            <p>padding-is space between border and content. </p>
+            <p>margin-margin is space around the border to other elements</p>
+        </div>
+    </section>
+</body>
+</html>

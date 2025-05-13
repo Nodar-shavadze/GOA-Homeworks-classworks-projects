@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სარეგისტრაციო ფორმა</title>
+</head>
+<body>
+    <h1>სარეგისტრაციო ფორმა</h1>
+    <!-- name ატრიბუტი გამოიყენება ფორმის ველების დასახელების და შემდგომ სერვერზე იდენტიფიცირებისთვის -->
+    <!-- value ატრიბუტი გამოიყენება ველის წინასწარ მნიშვნელობის დასადგენად -->
+    <form>
+        <label for="first-name">სახელი:</label>
+        <input type="text" id="first-name" name="first_name" placeholder="შეიყვანეთ თქვენი სახელი">
+        <br><br>
+
+        <label for="last-name">გვარი:</label>
+        <input type="text" id="last-name" name="last_name" placeholder="შეიყვანეთ თქვენი გვარი">
+        <br><br>
+
+        <label for="country">ქვეყანა:</label>
+        <!-- drop-down მენიუ ქვეყნებისთვის -->
+        <select id="country" name="country">
+            <option value="georgia">საქართველო</option>
+            <option value="usa">აშშ</option>
+            <option value="germany">გერმანია</option>
+            <option value="uk">დიდი ბრიტანეთი</option>
+        </select>
+        <br><br>
+
+        <button type="submit">დადასტურება</button>
+    </form>
+</body>
+</html>

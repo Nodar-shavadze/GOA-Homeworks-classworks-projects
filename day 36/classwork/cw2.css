@@ -1,0 +1,39 @@
+/* 
+   დეკლარაცია:
+   CSS დეკლარაცია შედგება თვისების (property) და მისი მნიშვნელობის (value) წყვილისგან.
+   მაგალითი: color: red; აქ color არის თვისება, ხოლო red არის მნიშვნელობა.
+*/
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 
+     სელექტორები:
+     სელექტორი გამოიყენება HTML ელემენტების სტილის განსაზღვრად.
+     ID სელექტორი - უნიკალური ელემენტისთვის (#main-title)
+     Class სელექტორი - რამდენიმე ელემენტისთვის (.description)
+     ელემენტის სელექტორი - ყველა მსგავსი ტიპის ელემენტისთვის (h2)
+  */
+  
+
+  #main-title {
+    color: yellow;
+    text-align: center;
+  }
+  
+
+  .description {
+    background-color: #2ecc71;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+
+  h2 {
+    color: orange;
+    text-align: left;
+  }
+  
