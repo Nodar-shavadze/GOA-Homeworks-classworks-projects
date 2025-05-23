@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let List1 = [1,2,3,4,5,6,7,8,9,10];
+let strList = ["a","b","c","d","e","f","g","h","i","j"];
+let List2 = List1.concat(strList);
+delete List2[5];
+List2.pop();
+List2.shift();
+List2[1] = "ვანო";
+List2.push("მოთიაშვილი");
+let List3 = list2.toString();
+console.log(finalString);
+
+let list1 = [1,2,3,4];
+let list2 = ["a","b","c"];
+let list3 = [true, false, null];
+let mergedArr1 = list1.concat(list2);
+let mergedArr2 = mergedArr1.concat(list3);
+mergedArr2.splice(2, 4);
+delete mergedArr2[2];
+console.log(mergedArr2[mergedArr2.length-1]);
+
+</script>
+</body>
+</html>

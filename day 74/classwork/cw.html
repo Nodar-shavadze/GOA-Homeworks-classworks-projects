@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1)შექმენით ორი სია, პრიველში დაამატეთ 10 ცალი ცაიფრი მეორეში 10 ცალი სტრინგი, შემდეგ ეს ორი სია გაერთიანეთ ერთ სიაში მეთოდის საშუალებით, შემდეგ delete ით შეცვალეთ მეხუთე ინდექსზე მდგომი ელემენტი undefined ით,  შემდეგ სიიდან ამოაგდეთ ბოლო ელემენტი, შემდეგ ამოაგდეთ პირველი ელემენტი და პირველ ინდექსზე ჩასვით "ვანო",  შემდგომბოლოშ ჩაამატეთ ერთი ელემენტი "მოთიაშვილი", საბოლოოდ გამოიტანეთ ეს მთლიანი სია გადაქცეული სტრინგად (დაიხმარეთ რესურსები)
+        let list1 = [1,2,3,4,5,6,7,8,9,10]
+        let list2 = ['a','b','c','d','e','f','g','h','i','j']
+        let newList = list1.concat(list2)
+        delete newList[5]
+        newList.pop()
+        newList.shift()
+        newList.unshift("ვანო")
+        newList.push("მოთიაშვილი")
+        console.log(newList.toString())
+    </script>
+
+</body>
+</html>
