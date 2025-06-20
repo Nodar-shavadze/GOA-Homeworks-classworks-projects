@@ -38,3 +38,5 @@ def printer_error(s):
         if i <"a" or i > "m":
             errors += 1
     return f"{errors}/{len(s)}" 
+
+
