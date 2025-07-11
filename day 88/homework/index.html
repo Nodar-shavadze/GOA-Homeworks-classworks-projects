@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 88 Homework</title>
+</head>
+<body>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <button id="helloBtn">Say Hello</button>
+
+    <!-- 
+        სკოუპი (Scope) არის ცვლადების ხილვადობის და ხელმისაწვდომობის არეალი კოდში.
+        არსებობს სამი ძირითადი სკოუპი:
+        1. გლობალური სკოუპი: ცვლადი გამოცხადებულია ფუნქციის გარეთ და ხელმისაწვდომია ყველგან.
+        2. ლოკალური სკოუპი: ცვლადი გამოცხადებულია ფუნქციის შიგნით და ხელმისაწვდომია მხოლოდ იმ ფუნქციაში.
+        3. ბლოკის სკოუპი: let და const ცვლადები ხელმისაწვდომია მხოლოდ იმ ბლოკში სადაც გამოცხადდა (მაგ. if, for).
+        
+        მაგალითები:
+        // გლობალური სკოუპი
+        let a = 5;
+        function test() {
+            console.log(a); // 5
+        }
+
+        // ლოკალური სკოუპი
+        function test2() {
+            let b = 10;
+            console.log(b); // 10
+        }
+        // console.log(b); // შეცდომა, b არ არსებობს გლობალურად
+
+        // ბლოკის სკოუპი
+        if (true) {
+            let c = 20;
+            console.log(c); // 20
+        }
+        // console.log(c); // შეცდომა, c არ არსებობს ბლოკის გარეთ
+    -->
+
+    <button id="addBtn">Add 2</button>
+
+    <form id="customRegForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="useremail" placeholder="Email" required>
+        <input type="password" id="userpass" placeholder="Password" required>
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            console.log(email, password);
+        });
+
+        const name = "Rezo";
+        document.getElementById('helloBtn').addEventListener('click', function() {
+            console.log(`Hello ${name}!`);
+        });
+
+        let num = 0;
+        document.getElementById('addBtn').addEventListener('click', function() {
+            num += 2;
+            console.log(num);
+        });
+
+        document.getElementById('customRegForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Registration completed successfully.");
+        });
+    </script>
+</body>
+</html>
